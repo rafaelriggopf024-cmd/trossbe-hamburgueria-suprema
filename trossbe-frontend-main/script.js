@@ -1,5 +1,5 @@
 // FRONTEND script.js (carrinho + checkout)
-const API_URL = "http://localhost:3000"; // backend
+const API_URL = "https://trossbe-backend.onrender.com";
 const CART_KEY = "trossbe_cart_v1";
 
 // util
