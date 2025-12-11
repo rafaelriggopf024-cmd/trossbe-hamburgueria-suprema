@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trossbe Hamburgueria — Loja</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Trossbe</h1>
+      <nav class="nav">
+        <a href="#menu">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button id="btn-cart" class="cart-btn">Carrinho (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <div>
+        <h2>Hambúrgueres artesanais com experiência digital</h2>
+        <p>Monte seu combo, ganhe pontos e acompanhe pedidos com QR code — feito para quem ama tecnologia e sabor.</p>
+        <a href="#menu" class="btn">Ver cardápio</a>
+      </div>
+      <img src="img/hamburguer_cardapio.png" alt="Trossbe Hamburgueria" />
+    </section>
+
+    <section id="menu" class="menu-section">
+      <h3>Nosso Menu</h3>
+      <p class="muted">Hambúrgueres, acompanhamentos e bebidas artesanais.</p>
+
+      <!-- Lista dinâmica de produtos -->
+      <div class="product-grid" id="lista-produtos"></div>
+
+    </section>
+
+    <section id="sobre" class="about">
+      <h3>Sobre a Trossbe</h3>
+      <p>A Trossbe é uma hamburgueria moderna com foco em tecnologia e e-commerce. Servimos hambúrgueres artesanais com rapidez e inovação.</p>
+      <ul class="highlights">
+        <li>Sistema responsivo e personalizável.</li>
+        <li>Sistema de fidelidade digital.</li>
+        <li>QR Codes inteligentes para acompanhar pedidos.</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="contact">
+      <h3>Contato</h3>
+      <form id="contact-form" class="form">
+        <label>
+          Nome
+          <input type="text" id="contact-name" required />
+        </label>
+        <label>
+          E-mail
+          <input type="email" id="contact-email" required />
+        </label>
+        <label>
+          Mensagem
+          <textarea id="contact-msg" rows="3"></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Modal de carrinho -->
+  <div id="cart-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-cart" class="close">×</button>
+      <h4>Seu Carrinho</h4>
+      <ul id="cart-items" class="cart-items"></ul>
+      <div class="cart-summary">
+        <strong>Total: R$ <span id="cart-total">0.00</span></strong>
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn ghost">Limpar</button>
+          <button id="checkout" class="btn">Finalizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Trossbe Hamburgueria — Projeto E-Commerce</small>
+    </div>
+  </footer>
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
