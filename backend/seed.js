@@ -11,32 +11,32 @@ const produtos = [
     nome: "Burger Clássico",
     descricao: "Pão, carne 120g, queijo e maionese especial.",
     preco: 22.90,
-    imagem_url: "/trossbe-frontend-main/img/hamburguer_cardapio.png"
+    imagem_url: "/img/hamburguer_cardapio.png"
   },
   {
     nome: "X-Bacon",
     descricao: "Hambúrguer artesanal com bacon crocante.",
     preco: 28.50,
-  imagem_url: "/trossbe-frontend-main/img/costela.png"
+  imagem_url: "/img/costela.png"
   },
   {
     nome: "Smash Duplo",
     descricao: "Dois steaks smash com queijo e molho da casa.",
     preco: 32.00,
- imagem_url: "/trossbe-frontend-main/img/trossbe.png"
+ imagem_url: "/img/trossbe.png"
   },
   {
     nome: "Cheddar Melt",
     descricao: "Carne 150g com cheddar cremoso e cebola caramelizada.",
     preco: 29.90,
-    imagem_url: "/trossbe-frontend-main/img/picante.png"
+    imagem_url: "/img/picante.png"
 
   },
   {
     nome: "Veggie Burger",
     descricao: "Hambúrguer vegetal com salada fresca e molho vegano.",
     preco: 24.90,
- imagem_url: "/trossbe-frontend-main/img/veggie.png"
+ imagem_url: "/img/veggie.png"
   }
 ];
 
